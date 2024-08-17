@@ -34,7 +34,7 @@ const MenuList = () => {
                                         Sombreros Saphikuna
                                         </div>
                                         <p className="text-sm leading-tight text-muted-foreground">
-                                        Bienvenido a mi tienda electronica, sumergete en el mundo de la moda y calidad de ropa.
+                                        Bienvenido a mi tienda electronica, sumergete en el mundo de la tradición y cultura.
                                         </p>
                                     </a>
                                 </NavigationMenuLink>
