@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 "use client"; // Asegúrate de que esta línea esté al inicio
 
 import React, { useState } from 'react';
