@@ -31,7 +31,7 @@ const ProductCard = (props: ProductCardProps) => {
           className="px-2 py-1 text-xs text-white bg-black rounded-full
                  dark:bg-white dark:text-black w-fit"
         >
-          {product.attributes.genero}
+          {product.attributes.taste}
         </p>
         <p
           className="px-2 py-1 text-xs text-white bg-yellow-900 rounded-full
@@ -59,9 +59,15 @@ const ProductCard = (props: ProductCardProps) => {
                             opacity-0 group-hover:opacity-100 bottom-5"
               >
                 <div className="flex justify-center gap-x-6">
-                <IconButton onclick={() => router.push(`/product/${product.attributes.slug}`)} icon={<Expand size={20} className="text-gray-600"/>} />
-
-                  <IconButton onClick={() => console.log("product")} icon={<ShoppingCart size={20} className="text-gray-600" />}
+                  <IconButton
+                    onClick={() =>
+                      router.push(`/product/${product.attributes.slug}`)
+                    }
+                    icon={<Expand size={20} className="text-gray-600" />}
+                  />
+                  <IconButton
+                    onClick={() => console.log("product")}
+                    icon={<ShoppingCart size={20} className="text-gray-600" />}
                   />
                 </div>
               </div>

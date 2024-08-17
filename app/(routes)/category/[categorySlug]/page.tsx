@@ -29,7 +29,7 @@ export default function Page() {
     <div className="max-w-6xl py-4 mx-auto sm:py-16 sm:px-24">
       {result !== null && !loading && result.length !== 0 && (
         <h1 className="text-3xl font-medium">
-          Café {result[0].attributes.category.data.attributes.categoryName}
+          {result[0].attributes.category.data.attributes.categoryName}
         </h1>
       )}
       <Separator />

@@ -1,10 +1,9 @@
 import { Menu } from "lucide-react";
-import {Popover, PopoverContent, PopoverTrigger } from "./ui/popover";
+import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover";
 import Link from "next/link";
 
 const ItemsMenuMobile = () => {
     return (
-
         <Popover>
             <PopoverTrigger>
                 <Menu />
@@ -15,9 +14,7 @@ const ItemsMenuMobile = () => {
                 <Link href="/category/sombreros-de-la-amazonia" className="block">Ruta Amazónica</Link>
             </PopoverContent>
         </Popover>
-        
     );
-    
 }
 
 export default ItemsMenuMobile;

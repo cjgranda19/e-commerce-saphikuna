@@ -1,5 +1,4 @@
-"use client";
-
+"use client"
 import { BaggageClaim, Heart, ShoppingCart, User } from "lucide-react";
 import { useRouter } from "next/navigation";
 import MenuList from "./menu-list";
@@ -7,16 +6,15 @@ import ItemsMenuMobile from "./items-menu-mobile";
 import ToggleTheme from "./toggle-theme";
 import { useCart } from "@/hooks/use-cart";
 import { useLovedProducts } from "@/hooks/use-loved-products";
-import Modal from "@/components/Modal"; // Ajusta la ruta si es necesario
+import Modal from "@/components/Modal";
 import { useState } from "react";
 
 const Navbar = () => {
-  const router = useRouter();
-  const cart = useCart();
-  const { lovedItems } = useLovedProducts();
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const handleOpenModal = () => setIsModalOpen(true);
+    const router = useRouter()
+    const cart = useCart()
+    const { lovedItems } = useLovedProducts()
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const handleOpenModal = () => setIsModalOpen(true);
   const handleCloseModal = () => setIsModalOpen(false);
 
   return (
@@ -90,6 +88,6 @@ const Navbar = () => {
       </div>
     </>
   );
-};
+}
 
 export default Navbar;

@@ -5,13 +5,13 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/ui/toaster"
-import NextTopLoader from 'nextjs-toploader';
+import NextTopLoader from 'nextjs-toploader'
 
 const urbanist = Urbanist({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Sombreros Saphikuna",
-  description: "Bienvenido a mi tienda electronica",
+  title: "TarreDev E-commerce",
+  description: "Welcome to my e-commerce from TarreDev",
 };
 
 export default function RootLayout({
@@ -22,13 +22,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={urbanist.className}>
-      <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            <NextTopLoader 
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <NextTopLoader 
             color="orange"
             initialPosition={0.08}
             crawlSpeed={200}
@@ -39,12 +39,12 @@ export default function RootLayout({
             speed={200}
             shadow="0 0 10px orange, 0 0 5px orange"
             />
-        <Navbar />
-        {children}
-        <Toaster />
-        <Footer />
+          <Navbar />
+          {children}
+          <Toaster />
+          <Footer />
         </ThemeProvider>
-        </body>
+      </body>
     </html>
   );
 }
