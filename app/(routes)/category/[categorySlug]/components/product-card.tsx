@@ -31,7 +31,7 @@ const ProductCard = (props: ProductCardProps) => {
           className="px-2 py-1 text-xs text-white bg-black rounded-full
                  dark:bg-white dark:text-black w-fit"
         >
-          {product.attributes.taste}
+          {product.attributes.genero}
         </p>
         <p
           className="px-2 py-1 text-xs text-white bg-yellow-900 rounded-full
