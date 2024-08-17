@@ -12,22 +12,22 @@ const dataFooter = [
       {
         id: 2,
         name: "Sobre nosotros",
-        link: "#",
+        link: "/about",
       },
       {
         id: 3,
         name: "Términos y condiciones",
-        link: "#",
+        link: "/terminos",
       },
       {
         id: 4,
         name: "Información de aduanas",
-        link: "#",
+        link: "/aduana",
       },
       {
         id: 5,
         name: "Política de devolución de productos",
-        link: "#",
+        link: "/devolucion",
       },
 ]
 
