@@ -1,8 +1,11 @@
-// src/pages/ReturnPolicyPage.tsx
+/* eslint-disable @next/next/no-img-element */
+"use client"; // Asegúrate de que esta línea esté al inicio
 
-import React from 'react';
+import React, { useState } from 'react';
 
-const ReturnPolicyPage: React.FC = () => {
+// Componente funcional para la página de historia
+const DevolucionPage = () => {
+  
   return (
     <div className="max-w-4xl mx-auto px-4 py-6">
       <h2 className="text-2xl font-bold mb-6">Política de Devolución de Productos</h2>
@@ -46,6 +49,6 @@ const ReturnPolicyPage: React.FC = () => {
       </p>
     </div>
   );
-}
+};
 
-export default ReturnPolicyPage;
+export default DevolucionPage;

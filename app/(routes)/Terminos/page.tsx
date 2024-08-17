@@ -1,8 +1,13 @@
-import React from 'react';
+/* eslint-disable @next/next/no-img-element */
+"use client"; // Asegúrate de que esta línea esté al inicio
 
-const TermsPage: React.FC = () => {
+import React, { useState } from 'react';
+
+// Componente funcional para la página de historia
+const TermsPage = () => {
+
   return (
-    <div className="p-8 max-w-4xl mx-auto">
+    <div className="max-w-4xl mx-auto px-4 py-6">
       <h1 className="text-4xl font-bold text-center mb-8">Términos y Condiciones</h1>
 
       <section className="mb-8">

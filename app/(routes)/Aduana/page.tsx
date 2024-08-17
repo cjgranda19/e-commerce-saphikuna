@@ -1,8 +1,12 @@
-// src/pages/CustomsInfoPage.tsx
+/* eslint-disable @next/next/no-img-element */
+"use client"; // Asegúrate de que esta línea esté al inicio
 
-import React from 'react';
+import React, { useState } from 'react';
 
-const CustomsInfoPage: React.FC = () => {
+
+// Componente funcional para la página de historia
+const HistoryPage = () => {
+
   return (
     <div className="max-w-4xl mx-auto px-4 py-6">
       <h2 className="text-3xl font-bold mb-8 text-center">Información de Aduanas</h2>
@@ -24,7 +28,6 @@ const CustomsInfoPage: React.FC = () => {
         <br />
         <strong>d. </strong>Se puede comprar una gran variedad de productos dentro de esta categoría siempre y cuando cumplan con el 4x4 y no sean para fines comerciales. Por esa razón, se puede comprar máximo 3 productos iguales o similares de la misma categoría. Por ejemplo, puedes comprar hasta 3 perfumes, hasta 3 relojes y hasta 3 pares de zapatos. Si te excedes de esta cantidad, tu orden puede tener cargos extra por parte de la aduana.
       </p>
-
       <p className="text-lg leading-relaxed mb-6 text-justify">
         <strong>2. Las tablets, laptops y celulares se pueden comprar a través de la Categoría C.</strong>
         <br /><br />
@@ -40,6 +43,6 @@ const CustomsInfoPage: React.FC = () => {
       </p>
     </div>
   );
-}
+};
 
-export default CustomsInfoPage;
+export default HistoryPage;

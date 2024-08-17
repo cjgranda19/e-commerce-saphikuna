@@ -1,6 +1,12 @@
-import React from 'react';
+/* eslint-disable @next/next/no-img-element */
+"use client"; // Asegúrate de que esta línea esté al inicio
 
-const AboutPage: React.FC = () => {
+import React, { useState } from 'react';
+
+
+// Componente funcional para la página de historia
+const AboutPage = () => {
+
   return (
     <div className="p-8 max-w-4xl mx-auto">
       <h1 className="text-4xl font-bold text-center mb-8">Sobre Nosotros</h1>
@@ -46,7 +52,6 @@ const AboutPage: React.FC = () => {
           </p>
         </div>
       </section>
-
       <section className="mb-8">
         <h2 className="text-2xl font-bold mb-4">Nuestros Valores</h2>
         <ul className="list-disc list-inside text-lg leading-relaxed text-justify mb-6">
