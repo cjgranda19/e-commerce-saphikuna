@@ -61,7 +61,7 @@ const ProductCard = (props: ProductCardProps) => {
                 <div className="flex justify-center gap-x-6">
                   <IconButton
                     onClick={() =>
-                      router.push(`/product/${product.attributes.slug}`)
+                      router.push(`/product/${product.attributes.genero}`)
                     }
                     icon={<Expand size={20} className="text-gray-600" />}
                   />
