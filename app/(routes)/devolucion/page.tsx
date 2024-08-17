@@ -1,47 +1,51 @@
-"use client"; // Asegúrate de que esta línea esté al inicio
+// src/pages/ReturnPolicyPage.tsx
 
 import React from 'react';
 
-const ReturnPolicyPage = () => {
+const ReturnPolicyPage: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gray-100 p-4">
-      <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-4xl mx-auto max-h-[80vh] overflow-y-auto">
-        <h2 className="text-2xl font-bold mb-6">Política de Devolución de Productos</h2>
-        <p className="text-lg leading-relaxed mb-6">
-          <strong>Política de devolución de Ecuador</strong>
-          <br /><br />
-          Sombreros Saphikuna ofrece a sus clientes la posibilidad de devolución para determinados productos a nuestras oficinas en Miami (EEUU). Dentro de cada publicación está especificado como “Producto con devolución” o “Producto sin devolución”.
-        </p>
-        <p className="text-lg leading-relaxed mb-6">
-          <strong>Los productos sin devolución son:</strong>
-          <br /><br />
-          - Los productos que tienen un tiempo de entrega mayor a 20 días hábiles.
-          <br />
-          - Productos que por su naturaleza, no admiten devolución en EEUU y por ende Sombreros Saphikuna no puede ofrecer la devolución al cliente. Ejemplos: perfumes, cremas y medicamentos.
-        </p>
-        <p className="text-lg leading-relaxed mb-6">
-          <strong>¿Cómo solicitar una devolución?</strong>
-          <br /><br />
-          Para solicitar una devolución, el cliente debe realizarlo a través de su cuenta de Sombreros Saphikuna. Este proceso está sujeto a la aprobación del departamento de Devoluciones (lo cual puede demorar de 48hs a 72hs hábiles). En caso de no tener la opción en la web, el cliente debe contactarse con Atención al Cliente para iniciar la solicitud.
-          <br /><br />
-          Una vez que la devolución sea habilitada por Sombreros Saphikuna, el cliente tiene un plazo de 48hs para gestionarlo en la web. Las solicitudes de devolución deben realizarse de manera individual para cada ítem de la orden, contando cada uno con su propia etiqueta.
-        </p>
-        <p className="text-lg leading-relaxed mb-6">
-          <strong>En productos con devolución, existen dos tipos de devoluciones:</strong>
-          <br /><br />
-          <strong>1. Devoluciones responsabilidad de cliente:</strong>
-          <br /><br />
-          Estas devoluciones se pueden dar por iniciativa del cliente, es decir, si no le gustó el producto o eligió mal el talle. El cliente dispone de un plazo máximo de 7 días para solicitar este tipo de devolución, desde el momento en que recibe su paquete. En estos casos, el cliente debe hacer la devolución a Miami por su cuenta, utilizando el courier que más le convenga, el costo lo debe cubrir el cliente.
-          <br /><br />
-          <strong>2. Devoluciones responsabilidad de Sombreros Saphikuna:</strong>
-          <br /><br />
-          Estas devoluciones se pueden dar si el producto llegó roto, diferente o incompleto. El cliente dispone en un plazo máximo de 7 días, desde el momento en que recibe su paquete. En estos casos, el cliente debe elegir un courier para hacer la devolución a Miami. Tiendamia cubre hasta $30 USD del costo de envío*. * El cliente debe enviar foto del comprobante para que se pueda reembolsar el costo de envío.
-          <br /><br />
-          En ambos casos de devoluciones, el reembolso de dinero será realizado a crédito interno, a no ser que el cliente especifique lo contrario. Para que desde nuestras oficinas en Miami nos confirmen que el producto fue recibido, y de esta forma podamos realizar el reembolso al cliente, es necesario que el producto llegue en las condiciones que fue enviado y con la etiqueta enviada por el departamento de Devoluciones a la vista.
-        </p>
-      </div>
+    <div className="max-w-4xl mx-auto px-4 py-6">
+      <h2 className="text-2xl font-bold mb-6">Política de Devolución de Productos</h2>
+
+      <p className="text-lg leading-relaxed mb-6">
+        <strong>Política de devolución de Ecuador</strong>
+        <br /><br />
+        En Sombreros Saphikuna, ofrecemos la opción de devolución para ciertos productos en nuestras oficinas en Miami (EEUU). Los productos se clasifican como “Producto con devolución” o “Producto sin devolución” en cada publicación.
+      </p>
+
+      <p className="text-lg leading-relaxed mb-6">
+        <strong>Los productos sin devolución son:</strong>
+        <br /><br />
+        - Productos con un tiempo de entrega superior a 20 días hábiles.
+        <br />
+        - Productos cuya naturaleza impide su devolución en EEUU, como perfumes, cremas y medicamentos.
+      </p>
+
+      <p className="text-lg leading-relaxed mb-6">
+        <strong>¿Cómo solicitar una devolución?</strong>
+        <br /><br />
+        Para solicitar una devolución, el cliente debe hacerlo a través de su cuenta en Sombreros Saphikuna. Esta solicitud estará sujeta a la aprobación del departamento de Devoluciones (que puede demorar entre 48 y 72 horas hábiles). Si la opción no está disponible en la web, el cliente debe contactar a Atención al Cliente para iniciar el proceso.
+        <br /><br />
+        Una vez aprobada la devolución por Sombreros Saphikuna, el cliente tiene un plazo de 48 horas para gestionarla en la web. Las solicitudes de devolución deben hacerse de manera individual para cada ítem de la orden, cada uno con su propia etiqueta.
+      </p>
+
+      <p className="text-lg leading-relaxed mb-6">
+        <strong>En productos con devolución, existen dos tipos de devoluciones:</strong>
+        <br /><br />
+        <strong>1. Devoluciones responsabilidad del cliente:</strong>
+        <br /><br />
+        Estas devoluciones pueden ser por iniciativa del cliente, por ejemplo, si el producto no le gustó o el talle fue mal elegido. El cliente tiene un plazo máximo de 7 días para solicitar este tipo de devolución desde la recepción del paquete. En estos casos, el cliente debe gestionar la devolución a Miami por su cuenta, utilizando el courier de su elección y cubriendo el costo.
+        <br /><br />
+        <strong>2. Devoluciones responsabilidad de Sombreros Saphikuna:</strong>
+        <br /><br />
+        Estas devoluciones son para productos que llegaron rotos, diferentes o incompletos. El cliente tiene un plazo máximo de 7 días desde la recepción del paquete para solicitar esta devolución. En estos casos, el cliente debe elegir un courier para enviar el producto de vuelta a Miami. Sombreros Saphikuna cubre hasta $30 USD del costo de envío*. *El cliente debe enviar una foto del comprobante para que se reembolse el costo del envío.
+      </p>
+
+      <p className="text-lg leading-relaxed mb-6">
+        En ambos casos de devolución, el reembolso se realizará como crédito interno, salvo que el cliente indique lo contrario. Para confirmar la recepción del producto y realizar el reembolso, el producto debe llegar en las mismas condiciones en que fue enviado, con la etiqueta proporcionada por el departamento de Devoluciones visible.
+      </p>
     </div>
   );
-};
+}
 
 export default ReturnPolicyPage;
