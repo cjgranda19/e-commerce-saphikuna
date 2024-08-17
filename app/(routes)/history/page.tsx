@@ -122,7 +122,8 @@ const HistoryPage = () => {
   return (
     <div className="p-4">
       <h1 className="text-3xl font-bold mb-6 text-center">Historia de la cultura de los Sombreros</h1>
-      <p className="mb-6 text-center">              La historia de los sombreros es un recorrido fascinante que abarca diversas culturas y épocas, incluyendo la rica tradición del Ecuador. Desde tiempos antiguos, los sombreros se crearon como una necesidad práctica para protegerse de los elementos, pero con el tiempo, evolucionaron para reflejar estatus, identidad y cultura.
+      <p className="mb-6 text-center">
+      La historia de los sombreros es un recorrido fascinante que abarca diversas culturas y épocas, incluyendo la rica tradición del Ecuador. Desde tiempos antiguos, los sombreros se crearon como una necesidad práctica para protegerse del clima, pero con el tiempo, evolucionaron para reflejar estatus, identidad y cultura.
       </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
