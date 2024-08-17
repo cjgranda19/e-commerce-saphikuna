@@ -59,15 +59,9 @@ const ProductCard = (props: ProductCardProps) => {
                             opacity-0 group-hover:opacity-100 bottom-5"
               >
                 <div className="flex justify-center gap-x-6">
-                  <IconButton
-                    onClick={() =>
-                      router.push(`/product/${product.attributes.genero}`)
-                    }
-                    icon={<Expand size={20} className="text-gray-600" />}
-                  />
-                  <IconButton
-                    onClick={() => console.log("product")}
-                    icon={<ShoppingCart size={20} className="text-gray-600" />}
+                <IconButton onclick={() => router.push(`/product/${product.attributes.slug}`)} icon={<Expand size={20} className="text-gray-600"/>} />
+
+                  <IconButton onClick={() => console.log("product")} icon={<ShoppingCart size={20} className="text-gray-600" />}
                   />
                 </div>
               </div>
