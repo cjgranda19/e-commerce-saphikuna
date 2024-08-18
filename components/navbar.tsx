@@ -39,12 +39,12 @@ const Navbar = () => {
               <h2 className="text-xl font-bold mb-4">Bienvenido a Sombreros Saphikuna</h2>
               <p className="text-sm text-gray-700">
               Los sombreros tradicionales de Ecuador están profundamente arraigados en la cultura
-               y la identidad del país al igual que "saphikuna" se compone de "saphiy" que significa "arraigar"
-                o "echar raíces" y "kuna", que es un sufijo plural en quechua. Por lo tanto, "saphikuna" podría interpretarse
-                 como "los que echan raíces" o "los que se arraigan" Estos sombreros no solo representan una herencia cultural,
+               y la identidad del país al igual que saphikuna se compone de saphiy que significa arraigar
+                o echar raíces y kuna, que es un sufijo plural en quechua. Por lo tanto, saphikuna podría interpretarse
+                 como los que echan raíces o los que se arraigan Estos sombreros no solo representan una herencia cultural,
                   sino que también son un símbolo de identidad para los ecuatorianos, especialmente en las regiones donde su fabricación 
-                  ha sido una práctica ancestral, transmitida de generación en generación. Así, los sombreros son como "Saphikuna",
-                   porque están "arraigados" en la cultura y la tradición del Ecuador, llevando consigo una rica historia y un sentido
+                  ha sido una práctica ancestral, transmitida de generación en generación. Así, los sombreros son como Saphikuna,
+                   porque están arraigados en la cultura y la tradición del Ecuador, llevando consigo una rica historia y un sentido
                     de pertenencia cultural que echa raíces en la identidad nacional.
               </p>
             </Modal>
