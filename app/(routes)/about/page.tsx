@@ -11,7 +11,7 @@ const AboutPage = () => {
       <h1 className="text-4xl font-bold text-center mb-8">Sobre Nosotros</h1>
 
       <section className="mb-8">
-        <h2 className="text-2xl font-bold mb-4">¿Quiénes Somos?</h2>
+        <h2 className="text-2xl font-bold mb-4">Quiénes Somos</h2>
         <p className="text-lg leading-relaxed text-justify mb-6">
           En Sombrero Saphikuna, somos una empresa dedicada a ofrecer los mejores sombreros y accesorios para protegerte del sol. Fundada con el objetivo de proporcionar productos de alta calidad y diseñados para cada ocasión, nos enorgullece ofrecer una amplia variedad de opciones que combinan estilo, comodidad y funcionalidad.
         </p>
@@ -23,7 +23,7 @@ const AboutPage = () => {
           En el siglo XVI, los sombreros llegaron a Ecuador con los colonizadores españoles, quienes los utilizaban como símbolo de estatus y para protegerse del clima. Aunque inicialmente ajenos a la cultura local, las comunidades indígenas comenzaron a adoptar este accesorio, transformándolo mediante el uso de materiales locales como la lana de oveja y el pelo de conejo. Lo que comenzó como una imposición extranjera se convirtió con el tiempo en un símbolo de identidad cultural, enriquecido por la sabiduría y las tradiciones ancestrales.
         </p>
         <p className="text-lg leading-relaxed text-justify mb-6">
-          Con la independencia de Ecuador en el siglo XIX, los sombreros se consolidaron como una parte esencial de la vestimenta regional. Desde los sombreros de paja toquilla, mundialmente conocidos como "sombreros Panamá", hasta los sombreros andinos de culturas como los Salasaka, Kayambi, Otavalo, el Chulla Quiteño y la Chola Cuencana, cada estilo refleja una historia de adaptación y orgullo cultural. Es importante destacar que, aunque se les conoce como "sombreros Panamá", su origen es ecuatoriano, específicamente de las provincias de Manabí y Azuay, donde son elaborados artesanalmente a partir de la fibra de la paja toquilla, un material que crece en estas regiones.
+          Con la independencia de Ecuador en el siglo XIX, los sombreros se consolidaron como una parte esencial de la vestimenta regional. Desde los sombreros de paja toquilla, mundialmente conocidos como sombreros Panamá, hasta los sombreros andinos de culturas como los Salasaka, Kayambi, Otavalo, el Chulla Quiteño y la Chola Cuencana, cada estilo refleja una historia de adaptación y orgullo cultural. Es importante destacar que, aunque se les conoce como sombreros Panamá, su origen es ecuatoriano, específicamente de las provincias de Manabí y Azuay, donde son elaborados artesanalmente a partir de la fibra de la paja toquilla, un material que crece en estas regiones.
         </p>
         <p className="text-lg leading-relaxed text-justify mb-6">
           Adicionalmente, los sombreros se confeccionan con otros materiales como el paño y la lana, los cuales son igualmente representativos de la diversidad cultural y geográfica del Ecuador. Estos sombreros, elaborados por manos artesanas en diversas provincias del país, no solo son distintivos de cada cultura, sino que también responden a las particularidades climáticas de cada región. Así, cada sombrero no solo es un accesorio, sino una expresión viva de la identidad ecuatoriana.

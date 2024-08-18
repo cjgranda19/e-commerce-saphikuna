@@ -82,12 +82,12 @@ const TermsPage = () => {
         <ul className="list-disc list-inside text-lg leading-relaxed text-justify mb-6">
           <li>Si nos das tu autorización.</li>
           <li>Para cumplir con obligaciones legales.</li>
-          <li>Con terceros que necesiten los datos para brindarte nuestros servicios (asegurándonos de que usen tu información de manera segura).</li>
+          <li>Con terceros que necesiten los datos para brindarte nuestros servicios asegurándonos de que usen tu información de manera segura.</li>
         </ul>
 
         <h3 className="text-xl font-semibold mt-6 mb-2">6. PROCESO PARA EJERCER TUS DERECHOS</h3>
         <p className="text-lg leading-relaxed text-justify mb-6">
-          Si deseas acceder, rectificar, eliminar u oponerte al uso de tus datos, envíanos un correo a <a href="mailto:semestreq4@gmail.com" className="text-blue-500">semestreq4@gmail.com</a> con el asunto "Derechos de datos" y tus datos personales. Responderemos a tu solicitud lo antes posible.
+          Si deseas acceder, rectificar, eliminar u oponerte al uso de tus datos, envíanos un correo a <a href="mailto:semestreq4@gmail.com" className="text-blue-500">semestreq4@gmail.com</a> con el asunto Derechos de datos y tus datos personales. Responderemos a tu solicitud lo antes posible.
         </p>
 
         <h3 className="text-xl font-semibold mt-6 mb-2">7. CAMBIOS EN NUESTRA POLÍTICA DE PRIVACIDAD</h3>
