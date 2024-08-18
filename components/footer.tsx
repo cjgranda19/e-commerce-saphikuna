@@ -12,12 +12,12 @@ const dataFooter = [
       {
         id: 2,
         name: "Sobre nosotros",
-        link: "/",
+        link: "#",
       },
       {
         id: 3,
         name: "Términos y condiciones",
-        link: "/",
+        link: "#",
       },
       {
         id: 4,
@@ -77,20 +77,21 @@ const Footer = () => {
                 <Separator className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
 
                 <div className="flex justify-center space-x-4 mb-4">
-          Contactanos:
-          <br />
-          {socialIcons.map((social) => (
-            <Link
-              key={social.id}
-              href={social.link}
-              className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white text-2xl"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {social.icon}
-            </Link>
-          ))}
-        </div>
+                            Contactanos:
+                        <br />
+                    {socialIcons.map((social) => (
+                    <Link
+                    key={social.id}
+                    href={social.link}
+                    className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white text-2xl"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >
+                    {social.icon}
+                    </Link>
+                ))}
+
+                </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
           <div>
@@ -151,7 +152,6 @@ const Footer = () => {
 </div>
 
         </div>
-
                 <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
                     <Link href="#">Sombreros Saphikuna</Link>
                     Todos los derechos reservados
