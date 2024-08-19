@@ -2,9 +2,10 @@
 
 import * as React from "react"
 import Link from "next/link"
+import categories, { Category } from "@/data/categoryData" // Importar categorías
+import products from "@/data/productsData" // Asegúrate de que esta ruta sea correcta
 
 import { cn } from "@/lib/utils"
-
 import {
     NavigationMenu,
     NavigationMenuContent,
@@ -12,10 +13,14 @@ import {
     NavigationMenuLink,
     NavigationMenuList,
     NavigationMenuTrigger,
-    navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 
 const MenuList = () => {
+    // Obtener productos por categoría
+    const getProductsByCategory = (categoryId: number) => {
+        return products.filter(product => product.categoryId === categoryId)
+    }
+
     return (
         <NavigationMenu>
             <NavigationMenuList>
@@ -29,21 +34,17 @@ const MenuList = () => {
                                         className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                                         href="/"
                                     >
-
                                         <div className="mb-2 mt-4 text-lg font-medium">
-                                        Sombreros Saphikuna
+                                            Sombreros Saphikuna
                                         </div>
                                         <p className="text-sm leading-tight text-muted-foreground">
-                                        Bienvenido a mi tienda electronica, sumergete en el mundo de la tradición y cultura.
+                                            Bienvenido a mi tienda electronica, sumergete en el mundo de la tradición y cultura.
                                         </p>
                                     </a>
                                 </NavigationMenuLink>
                             </li>
-                            <ListItem href="/shop" title="Tienda">
+                            <ListItem href="/" title="Tienda">
                                 Accede a toda tu información, tus pedidos y mucho más.
-                            </ListItem>
-                            <ListItem href="/offers" title="Ofertas">
-                                Sección dedicada a promociones y descuentos especiales
                             </ListItem>
                         </ul>
                     </NavigationMenuContent>
@@ -51,56 +52,42 @@ const MenuList = () => {
                 <NavigationMenuItem>
                     <NavigationMenuTrigger>Ropa</NavigationMenuTrigger>
                     <NavigationMenuContent>
-                        <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-                            {components.map((component) => (
+                        <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+                            {categories.map((category: Category) => (
                                 <ListItem
-                                    key={component.title}
-                                    title={component.title}
-                                    href={component.href}
+                                    key={category.id}
+                                    title={category.name}
+                                    href={`/category/${category.id}`}
                                 >
-                                    {component.description}
+                                    {getProductsByCategory(category.id).map(product => (
+                                        <div key={product.id}>
+                                            <h4 className="text-sm font-medium">{product.name}</h4>
+                                            <p className="text-sm leading-snug text-muted-foreground">
+                                                {product.description}
+                                            </p>
+                                        </div>
+                                    ))}
                                 </ListItem>
                             ))}
                         </ul>
                     </NavigationMenuContent>
                 </NavigationMenuItem>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger>Historia sombreros</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px]">
-              <ListItem href="/history" title="Historia de los sombreros">
-                Explora la rica historia y tradición detrás de nuestros sombreros.
-              </ListItem>
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
+                <NavigationMenuItem>
+                    <NavigationMenuTrigger>Historia sombreros</NavigationMenuTrigger>
+                    <NavigationMenuContent>
+                        <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px]">
+                            <ListItem href="/history" title="Historia de los sombreros">
+                                Explora la rica historia y tradición detrás de nuestros sombreros.
+                            </ListItem>
+                        </ul>
+                    </NavigationMenuContent>
+                </NavigationMenuItem>
             </NavigationMenuList>
         </NavigationMenu>
     )
 }
 
 export default MenuList
-
-const components: { title: string; href: string; description: string }[] = [
-    {
-        title: "Ruta Costera",
-        href: "/category/sombreros-de-la-costa",
-        description:
-          "Sombreros de marca y de calidad",
-      },
-      {
-        title: "Ruta Andina",
-        href: "/category/sombreros-de-la-sierra",
-        description:
-          "Sombreros de marca y de calidad",
-      },
-      {
-        title: "Ruta Amazónica",
-        href: "/category/sombreros-de-la-amazonia",
-        description:
-          "Sombreros de marca y de calidad",
-      },
-]
 
 const ListItem = React.forwardRef<
     React.ElementRef<"a">,
@@ -127,5 +114,3 @@ const ListItem = React.forwardRef<
     )
 })
 ListItem.displayName = "ListItem"
-
-

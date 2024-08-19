@@ -1,6 +1,7 @@
 import { Menu } from "lucide-react";
 import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover";
 import Link from "next/link";
+import categories from "@/data/categoryData"; // Importa las categorías
 
 const ItemsMenuMobile = () => {
     return (
@@ -9,9 +10,15 @@ const ItemsMenuMobile = () => {
                 <Menu />
             </PopoverTrigger>
             <PopoverContent>
-                <Link href="/category/sombreros-de-la-costa" className="block">Ruta Costera</Link>
-                <Link href="/category/sombreros-de-la-sierra" className="block">Ruta Andina</Link>
-                <Link href="/category/sombreros-de-la-amazonia" className="block">Ruta Amazónica</Link>
+                {categories.map(category => (
+                    <Link
+                        key={category.id}
+                        href={`/category/${category.name.toLowerCase().replace(/\s+/g, '-')}`} // Convierte el nombre en una URL amigable
+                        className="block"
+                    >
+                        {category.name}
+                    </Link>
+                ))}
             </PopoverContent>
         </Popover>
     );

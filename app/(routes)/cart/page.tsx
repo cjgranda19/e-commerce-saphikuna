@@ -4,32 +4,29 @@ import { Separator } from "@/components/ui/separator";
 import { useCart } from "@/hooks/use-cart";
 import { formatPrice } from "@/lib/formatPrice";
 import CartItem from "./components/cart-item";
-import { loadStripe } from "@stripe/stripe-js";
-import { makePaymentRequest } from "@/api/payment";
+import { useRouter } from "next/navigation"; // Importa useRouter
 
 export default function Page() {
-  const { items, removeAll } = useCart();
+  const { items = [], removeAll } = useCart(); // Asegúrate de que `items` no sea undefined
+  const router = useRouter(); // Inicializa useRouter
 
-  const prices = items.map((product) => product.attributes.price);
+  // Depuración: Verifica el contenido de items
+  console.log("Cart items:", items);
+
+  // Mapea los precios directamente si el objeto tiene la propiedad `price`
+  const prices = items
+    .map((product) => product.price || 0); // Accede directamente a `price` si no hay `attributes`
+
+  // Depuración: Verifica los precios extraídos
+  console.log("Prices:", prices);
+
   const totalPrice = prices.reduce((total, price) => total + price, 0);
-  const stripePromise = loadStripe(
-    process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY || ""
-  );
 
-  const buyStripe = async () => {
-    removeAll();
-    try {
-      const stripe = await stripePromise;
-      const res = await makePaymentRequest.post("/api/orders", {
-        products: items,
-      });
-      await stripe?.redirectToCheckout({
-        sessionId: res.data.stripeSession.id,
-      });
-      removeAll();
-    } catch (error) {
-      console.log(error);
-    }
+  // Depuración: Verifica el total calculado
+  console.log("Total Price:", totalPrice);
+
+  const handleBuyClick = () => {
+    router.push("/compra"); // Redirige a la página de éxito
   };
 
   return (
@@ -53,7 +50,7 @@ export default function Page() {
               <p>{formatPrice(totalPrice)}</p>
             </div>
             <div className="flex items-center justify-center w-full mt-3">
-              <Button className="w-full" onClick={buyStripe}>
+              <Button className="w-full" onClick={handleBuyClick}>
                 Comprar
               </Button>
             </div>

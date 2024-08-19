@@ -3,28 +3,30 @@ import ProductTasteOrigin from "@/components/shared/product-taste-origin";
 import { useCart } from "@/hooks/use-cart";
 import { formatPrice } from "@/lib/formatPrice";
 import { cn } from "@/lib/utils";
-import { ProductType } from "@/types/product";
+import { Product } from "@/types/product";
 import { X } from "lucide-react";
 
 interface CartItemProps {
-    product: ProductType
+    product: Product;
 }
 
 const CartItem = (props: CartItemProps) => {
-    const { product } = props
-    const { removeItem } = useCart()
+    const { product } = props;
+    const { removeItem } = useCart();
 
     return (
         <li className="flex py-6 border-b">
-            <ProductImageMinuature slug={product.attributes.slug} url={product.attributes.images.data[0].attributes.url} />
+            <ProductImageMinuature
+                slug={product.name} // Assuming `name` as `slug` here
+                url={product.imageUrl} // Use `imageUrl` directly
+            />
 
             <div className="flex justify-between flex-1 px-6">
                 <div>
-                    <h2 className="text-lg font-bold">{product.attributes.productName}</h2>
-                    <p className="font-bold">{formatPrice(product.attributes.price)}</p>
+                    <h2 className="text-lg font-bold">{product.name}</h2> {/* Use `name` instead of `productName` */}
+                    <p className="font-bold">{formatPrice(product.price)}</p> {/* Use `price` directly */}
 
-                    <ProductTasteOrigin taste={product.attributes.taste} origin={product.attributes.origin} />
-
+                    <ProductTasteOrigin origin={product.origin} /> {/* Use `origin` */}
                 </div>
                 <div>
                     <button
