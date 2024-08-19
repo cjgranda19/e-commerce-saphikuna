@@ -66,7 +66,7 @@ const products: Product[] = [
     categoryId: 2, // Usa el ID de la categoría
   },
   {
-    id: 6,
+    id: 7,
     name: "Sombrero Secoya",
     description: "Los sombreros tradicionales de los Secoyas, una comunidad indígena de la Amazonía ecuatoriana, son notablemente diferentes de los de las regiones andinas y costeras. Estos sombreros suelen estar hechos de materiales naturales como fibras vegetales y hojas de palma, reflejando su profunda conexión con el entorno amazónico. Los Secoyas los decoran con plumas de aves locales, semillas, y a veces con cuentas de colores, lo que los hace vibrantes y únicos.",
     origin: "Ecuador",
@@ -75,7 +75,7 @@ const products: Product[] = [
     categoryId: 3, // Usa el ID de la categoría
   },
   {
-    id: 7,
+    id: 8,
     name: "Sombreros de los Kayambi",
     description: "Los sombreros ecuatorianos de la cultura Kayambi, originaria de la región andina de Ecuador, se caracterizan por su forma tradicional con copa alta y ala media, ofreciendo protección tanto del sol como del frío de las alturas. Estos sombreros están elaborados con lana de oveja, teñida en tonos sobrios como el negro y marrón, que reflejan la conexión con la tierra y la naturaleza.",
     origin: "Kayambi",
@@ -84,7 +84,7 @@ const products: Product[] = [
     categoryId: 2, // Usa el ID de la categoría
   },
   {
-    id: 8,
+    id: 9,
     name: "Sombreros de Aruchico",
     description: "El sombrero Aruchico, tradicional de las regiones andinas de Ecuador, es un símbolo cultural que representa la diversidad y riqueza de la cultura andina. Adornado con cintas multicolores, cada color simboliza elementos naturales. Además, es un emblema de protección espiritual e identidad indígena en las festividades de San Pedro y San Juan.",
     origin: "Aruchico",
@@ -93,7 +93,7 @@ const products: Product[] = [
     categoryId: 2, // Usa el ID de la categoría
   },
   {
-    id: 9,
+    id: 10,
     name: "Sombrero Montuvio",
     description: "El sombrero montuvio, tradicional en Guayas, Manabí y Los Ríos, es un símbolo de identidad y orgullo para la cultura montuvia en Ecuador. Confeccionado de paja toquilla o mocora, su cinta negra simboliza respeto y honor, mientras que su color natural o blanco representa pureza y conexión con la tierra. Es un emblema de tradición y herencia cultural.",
     origin: "Montuvio",
@@ -102,7 +102,7 @@ const products: Product[] = [
     categoryId: 1, // Usa el ID de la categoría
   },
   {
-    id: 10,
+    id: 11,
     name: "Sombrero de Paja Toquilla",
     description: "Conocidos como sombreros Panamá, son un símbolo de la identidad y la herencia cultural ecuatoriana, reconocidos mundialmente por su fina artesanía. Hechos a mano con hojas de la planta Carludovica palmata, representan elegancia y estatus social, y son un emblema de la dedicación y destreza de las comunidades rurales de Ecuador.",
     origin: "Toquilla",
@@ -111,7 +111,7 @@ const products: Product[] = [
     categoryId: 1, // Usa el ID de la categoría
   },
   {
-    id: 11,
+    id: 12,
     name: "Sombrero de Paja Toquilla con Ala ancha",
     description: "Es un sombrero con una ala más ancha que el promedio, diseñado para ofrecer mayor protección contra el sol. Este estilo es popular en climas cálidos y soleados.",
     origin: "Toquilla",
@@ -120,7 +120,7 @@ const products: Product[] = [
     categoryId: 1, // Usa el ID de la categoría
   },
   {
-    id: 12,
+    id: 13,
     name: "Sombrero del Chullita Quiteño",
     description:"El sombrero del chullita quiteño es un símbolo de identidad y orgullo cultural en Quito, representando la alegría y picardía del personaje tradicional de la ciudad. Hecho de fieltro, generalmente de lana, este sombrero de ala ancha y copa alta es un elemento clave en la vestimenta del chullita, y es especialmente usado durante las celebraciones populares como las fiestas de Quito.",
     origin: "Chullita",
@@ -129,7 +129,7 @@ const products: Product[] = [
     categoryId: 2, // Usa el ID de la categoría
   },
   {
-    id: 13,
+    id: 14,
     name: "Sombrero de la Chola Cuencana",
     description: "La chola cuencana que viene del campo lleva sombrero de paja toquilla, tejido a mano, de copa alta, ala corta y cintillo negro, la que viene de la ciudad generalmente no lleva sombrero.",
     origin: "Chola",
@@ -138,7 +138,7 @@ const products: Product[] = [
     categoryId: 2, // Usa el ID de la categoría
   },
   {
-    id: 14,
+    id: 15,
     name: "Sombrero de los Puruháes",
     description: "Los sombreros de los Puruháes, originarios de la región central andina, son de forma cónica con ala estrecha, elaborados con lana de oveja en colores oscuros como negro y marrón. Estos sombreros simbolizan el estatus y la identidad comunitaria, siendo esenciales en ceremonias y festividades tradicionales, como el Kapak Raymi, donde refuerzan el vínculo con la tierra y los ancestros.",
     origin: "Puruhá",
