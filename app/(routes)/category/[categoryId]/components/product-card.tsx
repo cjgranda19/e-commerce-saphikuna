@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import { Expand, ShoppingCart } from "lucide-react";
 import { useRouter } from "next/navigation";

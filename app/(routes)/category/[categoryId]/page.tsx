@@ -1,5 +1,4 @@
-"use client";
-
+"use client"
 import { useParams } from "next/navigation";
 import { Separator } from "@/components/ui/separator";
 import products, { Product } from "@/data/productsData";
@@ -13,16 +12,16 @@ export default function Page() {
   const params = useParams();
   const categoryId = parseInt(params.categoryId as string, 10);
 
-  console.log("Received Category ID:", categoryId); // Agrega este log para verificar el ID recibido
+  // Llama a useState antes de cualquier retorno condicional
+  const [filterOrigin, setFilterOrigin] = useState("");
 
+  // Manejo de la categoría y productos después de llamar a useState
   if (isNaN(categoryId)) {
     return <p>Invalid Category ID</p>;
   }
 
   // Busca la categoría correspondiente usando el id
   const category = categories.find((cat) => cat.id === categoryId);
-
-  console.log("Found Category:", category); // Agrega este log para verificar la categoría encontrada
 
   if (!category) {
     return <p>Category not found</p>; // Manejo si la categoría no se encuentra
@@ -33,16 +32,12 @@ export default function Page() {
     (product: Product) => product.categoryId === categoryId
   );
 
-  const [filterOrigin, setFilterOrigin] = useState("");
-
   // Filtrar productos por origen además de la categoría
   const displayedProducts: Product[] = filterOrigin === ""
     ? filteredProducts
     : filteredProducts.filter(
         (product: Product) => product.origin === filterOrigin
       );
-
-  console.log("Filtered Products:", displayedProducts); // Agrega este log para verificar los productos filtrados
 
   return (
     <div className="max-w-6xl py-4 mx-auto sm:py-16 sm:px-24">
