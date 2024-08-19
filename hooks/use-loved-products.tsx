@@ -1,17 +1,17 @@
 import { create } from "zustand";
 import { persist, createJSONStorage } from 'zustand/middleware'
-import { ProductType } from "@/types/product";
+import { Product } from "@/types/product";
 import { toast } from '@/components/ui/use-toast'
 
 interface UseLovedProductsType {
-    lovedItems: ProductType[],
-    addLoveItem: (data: ProductType) => void
+    lovedItems: Product[],
+    addLoveItem: (data: Product) => void
     removeLovedItem: (id: number) => void
 }
 
 export const useLovedProducts = create(persist<UseLovedProductsType>((set, get) => ({
     lovedItems: [],
-    addLoveItem: (data: ProductType) => {
+    addLoveItem: (data: Product) => {
         const currentLovedItems = get().lovedItems;
         const existingItem = currentLovedItems.find((item) => item.id === data.id)
 
