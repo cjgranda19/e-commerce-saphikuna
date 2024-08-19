@@ -14,9 +14,6 @@ const FilterOrigin = (props: FilterOriginProps) => {
     return (
         <div className="my-5">
             <p className="mb-3 font-bold">Origen</p>
-            {loading && result === null && (
-                <p>Cargando origen...</p>
-            )}
 
             <RadioGroup onValueChange={(value) => setFilterOrigin(value)}>
                 {result !== null && result.schema.attributes.origin.enum.map((origin: string) => (
