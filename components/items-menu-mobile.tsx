@@ -13,7 +13,7 @@ const ItemsMenuMobile = () => {
                 {categories.map(category => (
                     <Link
                         key={category.id}
-                        href={`/category/${category.name.toLowerCase().replace(/\s+/g, '-')}`} // Convierte el nombre en una URL amigable
+                        href={`/category/${category.id}`} // Use the ID instead of the name
                         className="block"
                     >
                         {category.name}
