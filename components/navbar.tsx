@@ -22,7 +22,7 @@ const Navbar = () => {
       <div className="flex items-center justify-between p-4 mx-auto cursor-pointer sm:max-w-4xl md:max-w-6xl">
         <div className="flex items-center">
           <img
-            src="..\icono.jpg" // Ajusta la ruta del ícono
+            src="/icono.jpg" // Ajusta la ruta del ícono
             alt="Logo"
             className="w-12 h-12 cursor-pointer"
             onClick={() => router.push("/")} // Redirige a la página principal al hacer clic
